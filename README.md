@@ -35,6 +35,13 @@ Thresholds are constants at the top of `src/observatory/quality.py`. Flagged obs
 3. **Pass-through:** distributed-lag regressions of category price changes on FX changes; lag in days per category.
 4. **Dashboard:** gap, index and lag heatmap by category.
 
+## Local fallback collector (Windows)
+While GitHub Actions is not running the workflow, `scripts/collect_local.ps1` runs the same jobs on a Windows PC through Task Scheduler (folder `\Observatorio\`): FX every 4 hours from 00:07, FX + prices daily at 07:23 (Caracas time), then the quality report. It commits new data **locally only**; pushing is manual. Missed runs (PC off) start when the PC is next on; days the PC stays off remain documented gaps. Log: `logs/local_collect.log` (not committed). Disable it once Actions runs, so hours are not collected twice:
+
+```powershell
+Get-ScheduledTask -TaskPath "\Observatorio\" | Disable-ScheduledTask
+```
+
 ## Run locally
 ```bash
 pip install -r requirements.txt
