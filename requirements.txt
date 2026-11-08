@@ -1,0 +1,6 @@
+requests>=2.31
+certifi>=2024.2
+beautifulsoup4>=4.12
+pyyaml>=6.0
+duckdb>=1.0
+pytest>=8.0

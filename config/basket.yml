@@ -1,0 +1,151 @@
+# Basket configuration (reviewed 2026-11-07/08).
+#
+# Store selection: only stores whose product pages are public, rendered on the
+# server (price present in the HTML), allowed by robots.txt, and not behind a
+# bot challenge. Checked and NOT used:
+#   - elplazas.com, centralmadeirense.com.ve, excelsiorgama.com: Cloudflare
+#     bot challenge on every request (bypassing it is not acceptable).
+#   - gamaenlinea.com: client-side app; the HTML has no prices (they come from
+#     a private API, not a public page).
+#   - forum.com.ve: no online catalogue of its own; Forum Supermayorista sells
+#     online only through the Zupper app (zupper.market), which on 2026-11-08
+#     returned Cloudflare origin errors (1000/409/530) for every page and for
+#     robots.txt. Re-check later; not added while robots.txt can't be read.
+#
+# Terms of use (none forbids automated reading; all restrict republishing the
+# site's "content"; Rio's terms are silent): see README > Stores and data use.
+# Decision 2026-11-08: raw product-level prices are published (factual fields
+# only, no images or descriptions); stores can request removal.
+#
+# `sku` is our own product key. The same sku in several stores means the SAME
+# product and size, so cross-store comparisons are like-for-like. A different
+# size or variant gets a different sku.
+#
+# Basket size is capped at 80 items; pharmacy items that matched no other
+# store were dropped when Rio was added.
+#
+# Categories: alimentos, bebidas, limpieza, aseo_personal, bebe, medicamentos.
+
+stores:
+  # Sigo (nopCommerce). Shows prices in USD. robots.txt allows product pages.
+  # Price comes from the schema.org microdata attribute <span itemprop="price"
+  # content="1.38">. There is NO reliable stock signal: sold-out items keep the
+  # "Añadir al carrito" button and show $0.00, which we record as zero_price.
+  - name: sigo
+    currency: USD
+    method: css
+    price_selector: "span[itemprop=price]"
+    price_attr: content
+    items:
+      - {sku: arroz-mary-premium-900g, category: alimentos, name: Arroz Premium Mary 900 g, url: "https://www.sigo.com.ve/arroz-premium-mary-900-gr"}
+      - {sku: harina-maiz-juana-1kg, category: alimentos, name: Harina de maiz blanca Juana 1 kg, url: "https://www.sigo.com.ve/harina-blanca-juana-1-k"}
+      - {sku: harina-trigo-blancaflor-1kg, category: alimentos, name: Harina de trigo todo uso Blancaflor 1 kg, url: "https://www.sigo.com.ve/harina-todo-uso-blancaflor-1-k"}
+      - {sku: espagueti-primor-1kg, category: alimentos, name: Espagueti Primor 1 kg, url: "https://www.sigo.com.ve/espaguetti-primor-1-k"}
+      - {sku: aceite-vegetal-vatel-1l, category: alimentos, name: Aceite vegetal Vatel 1 L, url: "https://www.sigo.com.ve/aceite-vegetal-vatel-de-1-l"}
+      - {sku: aceite-maiz-mazeite-1l, category: alimentos, name: Aceite de maiz Mazeite 1 L, url: "https://www.sigo.com.ve/aceite-de-ma%C3%ADz-mazeite-1-l"}
+      - {sku: caraota-negra-pantera-900g, category: alimentos, name: Caraota negra Pantera 900 g, url: "https://www.sigo.com.ve/caraota-negra-pantera-900gr"}
+      - {sku: lenteja-mary-400g, category: alimentos, name: Lenteja Mary 400 g, url: "https://www.sigo.com.ve/lenteja-mary-400-gr"}
+      - {sku: atun-margarita-aceite-140g, category: alimentos, name: Atun en aceite vegetal Margarita 140 g, url: "https://www.sigo.com.ve/at%C3%BAn-en-aceite-vegetal-margarita-140-gr"}
+      - {sku: sardina-margarita-tomate-170g, category: alimentos, name: Sardinas en salsa de tomate Margarita 170 g, url: "https://www.sigo.com.ve/sardinas-en-salsa-de-tomate-margarita-170-gr"}
+      - {sku: mayonesa-mavesa-445g, category: alimentos, name: Mayonesa Mavesa 445 g, url: "https://www.sigo.com.ve/mayonesa-mavesa-445-gr-2"}
+      - {sku: margarina-mavesa-500g, category: alimentos, name: Margarina Mavesa 500 g, url: "https://www.sigo.com.ve/margarina-mavesa-500-gr"}
+      - {sku: mantequilla-purisima-sal-200g, category: alimentos, name: Mantequilla con sal Purisima 200 g, url: "https://www.sigo.com.ve/mantq-purisima-200g-csal"}
+      - {sku: queso-blanco-paisa-250g, category: alimentos, name: Queso blanco Paisa especial 250 g, url: "https://www.sigo.com.ve/queso-blanco-paisa-especial-150-gr"}
+      - {sku: leche-polvo-montana-fresca-900g, category: alimentos, name: Leche en polvo completa Montana Fresca 900 g, url: "https://www.sigo.com.ve/leche-monta%C3%B1a-fresca-900g-compt"}
+      - {sku: coca-cola-2l, category: bebidas, name: Coca-Cola original 2 L, url: "https://www.sigo.com.ve/refresco-coca-cola-2-l"}
+      - {sku: maltin-polar-1-5l, category: bebidas, name: Malta Maltin Polar 1.5 L, url: "https://www.sigo.com.ve/malta-malt%C3%ADn-polar-15-l"}
+      - {sku: agua-minalba-1-5l, category: bebidas, name: Agua mineral Minalba 1.5 L, url: "https://www.sigo.com.ve/agua-mineral-minalba-15-l"}
+      - {sku: cloro-titan-1l, category: limpieza, name: Cloro multiusos El Titan 1 L, url: "https://www.sigo.com.ve/cloro-multiusos-el-titan-1l"}
+      - {sku: detergente-titan-1kg, category: limpieza, name: Detergente El Titan original 1 kg, url: "https://www.sigo.com.ve/deterente-el-titan-original-1-kg-lavado-manual"}
+      - {sku: detergente-ariel-liquido-800ml, category: limpieza, name: Detergente liquido Ariel doble poder 800 ml, url: "https://www.sigo.com.ve/detergente-l%C3%ADquido-doble-poder-ariel-800-ml"}
+      - {sku: lavaplatos-axion-crema-450g, category: limpieza, name: Lavaplatos en crema Axion limon 450 g, url: "https://www.sigo.com.ve/lavaplatos-con-lim%C3%B3n-axion-450-gr"}
+      - {sku: jabon-azul-las-llaves-200g, category: limpieza, name: Jabon azul en barra Las Llaves 200 g, url: "https://www.sigo.com.ve/jab%C3%B3n-az%C3%BAl-en-barra-las-llaves-200-gr"}
+      - {sku: crema-dental-colgate-antisarro-75ml, category: aseo_personal, name: Crema dental Colgate anti sarro 75 ml, url: "https://www.sigo.com.ve/crema-dental-anti-sarro-colgate-75-ml"}
+      - {sku: desodorante-rexona-v8-barra-50g, category: aseo_personal, name: Desodorante en barra Rexona V8 50 g, url: "https://www.sigo.com.ve/desodorante-en-barra-v8-rexona-50-gr"}
+      - {sku: compota-manzana-heinz-186g, category: bebe, name: Compota de manzana Heinz 186 g, url: "https://www.sigo.com.ve/compota-de-manzana-heinz-186-gr"}
+      - {sku: acetaminofen-dol-x10, category: medicamentos, name: Acetaminofen Dol 10 tabletas, url: "https://www.sigo.com.ve/acetaminofen-dol-tab-x10"}
+
+  # Farmatodo (server-rendered Angular). Shows prices in Bs (VES). robots.txt
+  # allows /producto/*. Price and availability come from the schema.org
+  # JSON-LD block; the visible price is span.product-all-price__normal (used
+  # only as fallback). Excluded on purpose: Harina PAN 1 kg (111016370) shows
+  # Bs 84,20 (about USD 0.09), which looks like a stale catalogue price.
+  - name: farmatodo
+    currency: VES
+    method: jsonld
+    price_selector: "span.product-all-price__normal"
+    items:
+      - {sku: arroz-mary-premium-900g, category: alimentos, name: Arroz Mary Premium 900 g, url: "https://www.farmatodo.com.ve/producto/112370639-arroz-mary-premium-900gr-tipo-i"}
+      - {sku: margarina-mavesa-500g, category: alimentos, name: Margarina Mavesa 500 g, url: "https://www.farmatodo.com.ve/producto/111016380-margarina-mavesa-500gr"}
+      - {sku: mayonesa-mavesa-445g, category: alimentos, name: Mayonesa Mavesa 445 g, url: "https://www.farmatodo.com.ve/producto/111592899-mayonesa-mavesa-445gr"}
+      - {sku: atun-margarita-aceite-140g, category: alimentos, name: Atun Margarita en aceite vegetal 140 g, url: "https://www.farmatodo.com.ve/producto/113922394-atun-margarita-en-aceite-vegetal-140gr"}
+      - {sku: leche-polvo-la-campesina-800g, category: alimentos, name: Leche en polvo La Campesina 800 g, url: "https://www.farmatodo.com.ve/producto/113719409-leche-en-polvo-la-campesina-enriquecida-con-hierro-y-vitaminas-800gr"}
+      - {sku: azucar-montalban-1kg, category: alimentos, name: Azucar refinada Montalban 1 kg, url: "https://www.farmatodo.com.ve/producto/111103216-azucar-montalban-refinada-1kg"}
+      - {sku: crema-dental-colgate-triple-150ml, category: aseo_personal, name: Crema dental Colgate triple accion 150 ml, url: "https://www.farmatodo.com.ve/producto/111126966-crema-dental-colgate-triple-accion-150ml"}
+      - {sku: jabon-protex-avena-110g, category: aseo_personal, name: Jabon en barra Protex avena 110 g, url: "https://www.farmatodo.com.ve/producto/113668390-jabon-en-barra-protex-avena-110gr"}
+      - {sku: papel-rosal-plus-300h-4r, category: aseo_personal, name: Papel higienico Rosal Plus 4 rollos 300 hojas, url: "https://www.farmatodo.com.ve/producto/111112156-papel-higienico-rosal-plus-vinotinto-4-rollos-300hojas"}
+      - {sku: panal-farmatodo-m-30u, category: bebe, name: Panal Farmatodo premium etapa 2 talla M 30 u, url: "https://www.farmatodo.com.ve/producto/115659518-panal-farmatodo-premium-etapa-2-talla-m-x-30-und"}
+      - {sku: detergente-ariel-liquido-800ml, category: limpieza, name: Detergente liquido Ariel doble poder 800 ml, url: "https://www.farmatodo.com.ve/producto/113706464-detergente-liquido-ariel-doble-poder-800ml"}
+      - {sku: lavaplatos-axion-liquido-750ml, category: limpieza, name: Lavaplatos liquido Axion limon 750 ml, url: "https://www.farmatodo.com.ve/producto/114847445-lavaplatos-liquido-axion-limon-750ml"}
+      - {sku: ibuprofeno-ibutan-400-x10, category: medicamentos, name: Ibuprofeno Ibutan 400 mg 10 tabletas, url: "https://www.farmatodo.com.ve/producto/111004481-ibuprofeno-ibutan-400mg-10-tabletas"}
+      - {sku: losartan-la-sante-50-x30, category: medicamentos, name: Losartan potasico La Sante 50 mg 30 tabletas, url: "https://www.farmatodo.com.ve/producto/111546897-losartan-potasico-50mg-x30-tabletas-la-sante"}
+      - {sku: acetaminofen-atamel-500-x20, category: medicamentos, name: Acetaminofen Atamel 500 mg 20 tabletas, url: "https://www.farmatodo.com.ve/producto/114994402-acetaminofen-500-mg-atamel-x-20-tabletas"}
+
+  # Locatel (VTEX). Shows prices in Bs (VES). robots.txt allows /*/p product
+  # pages. Price and availability come from the schema.org JSON-LD block (the
+  # visible price is split across several spans, so JSON-LD is more robust).
+  - name: locatel
+    currency: VES
+    method: jsonld
+    items:
+      - {sku: arroz-primor-900g, category: alimentos, name: Arroz Primor tradicional 900 g, url: "https://www.locatel.com.ve/primor_arroz_tradicional_900g/p"}
+      - {sku: aceite-maiz-mazeite-1l, category: alimentos, name: Aceite de maiz Mazeite 1 L, url: "https://www.locatel.com.ve/mazeite_aceite_de_maiz_1l/p"}
+      - {sku: margarina-mavesa-500g, category: alimentos, name: Margarina Mavesa 500 g, url: "https://www.locatel.com.ve/mavesa_margarina_500gr/p"}
+      - {sku: atun-margarita-aceite-140g, category: alimentos, name: Atun Margarita en aceite vegetal 140 g, url: "https://www.locatel.com.ve/margarita_atun_en_aceite_vegetal_140g/p"}
+      - {sku: sardina-margarita-tomate-170g, category: alimentos, name: Sardina Margarita en salsa de tomate 170 g, url: "https://www.locatel.com.ve/margarita_sardina_en_salsa_tomate_170g/p"}
+      - {sku: leche-polvo-san-simon-900g, category: alimentos, name: Leche en polvo completa San Simon 900 g, url: "https://www.locatel.com.ve/san_simon_leche_en_polvo_completa_900g/p"}
+      - {sku: azucar-amanecer-1kg, category: alimentos, name: Azucar refinada Amanecer 1 kg, url: "https://www.locatel.com.ve/amanecer-azucar-refinado-1kg/p"}
+      - {sku: crema-dental-colgate-triple-150ml, category: aseo_personal, name: Crema dental Colgate triple accion 150 ml, url: "https://www.locatel.com.ve/colgate_crema_dental_triple_accion_150ml/p"}
+      - {sku: jabon-protex-avena-110g, category: aseo_personal, name: Jabon Protex avena 110 g, url: "https://www.locatel.com.ve/jabon_protex_en_barra_avena_110_gr/p"}
+      - {sku: papel-rosal-plus-300h-4r, category: aseo_personal, name: Papel higienico Rosal Plus 4 rollos 300 hojas, url: "https://www.locatel.com.ve/rosal_plus_vino_tinto_ph_300hojas_x4/p"}
+      - {sku: desodorante-rexona-v8-barra-50g, category: aseo_personal, name: Desodorante en barra Rexona men V8 50 g, url: "https://www.locatel.com.ve/desod_rexona_barra_men_v8_50g/p"}
+      - {sku: detergente-ariel-liquido-800ml, category: limpieza, name: Detergente liquido Ariel doble poder 800 ml, url: "https://www.locatel.com.ve/ariel_doble_poder_liquido_800ml/p"}
+      - {sku: lavaplatos-axion-liquido-750ml, category: limpieza, name: Lavaplatos liquido Axion limon 750 ml, url: "https://www.locatel.com.ve/axion_lavaplatos_liq_limon_750ml/p"}
+      - {sku: lavaplatos-axion-crema-450g, category: limpieza, name: Lavaplatos en crema Axion limon 450 g, url: "https://www.locatel.com.ve/axion_limon_pasta_450gr/p"}
+      - {sku: losartan-calox-50-x30, category: medicamentos, name: Losartan potasico Calox 50 mg 30 tabletas, url: "https://www.locatel.com.ve/calox_losartan_potasico_50_mg_x30_tabletas_recubiertas/p"}
+      - {sku: ibuprofeno-calox-400-x10, category: medicamentos, name: Ibuprofeno Calox 400 mg 10 tabletas, url: "https://www.locatel.com.ve/calox_ibuprofeno_400mg_x_10_tab_rec_/p"}
+      - {sku: acetaminofen-atamel-500-x20, category: medicamentos, name: Acetaminofen Atamel (Calox) 500 mg 20 tabletas, url: "https://www.locatel.com.ve/calox_atamel_500_mg_x_20_tabletas/p"}
+
+  # Rio Supermarket (Caracas; Next.js on the Instaleap platform). Online store
+  # launched Aug 2026. Shows prices in "REF" (= USD, paid in Bs at the BCV
+  # rate). There is no robots.txt (the path serves the app page), so nothing
+  # is disallowed; its terms (/TerminosCondicionesRio) say nothing about
+  # automated access or reuse of content. Price and availability come from the
+  # JSON-LD offers.priceSpecification, which holds the REGULAR price: when an
+  # item is on promotion the page shows a lower price that we do NOT record.
+  # The server-rendered catalogue is the default store (no location chosen).
+  - name: rio
+    currency: USD
+    method: jsonld
+    items:
+      - {sku: harina-pan-blanca-sg-1kg, category: alimentos, name: Harina de maiz blanco sin gluten PAN 1 kg, url: "https://www.riomarket.com/p/harina-de-maiz-blanco-sin-gluten-pan-1-kg-7591002200145"}
+      - {sku: arroz-primor-900g, category: alimentos, name: Arroz tradicional Primor 900 g, url: "https://www.riomarket.com/p/arroz-tradicional-primor-900-gr-7591002800109"}
+      - {sku: pasta-dedal-primor-1kg, category: alimentos, name: Pasta corta dedales Primor 1 kg, url: "https://www.riomarket.com/p/pasta-corta-dedales-primor-1-kg-7591002000851"}
+      - {sku: aceite-vegetal-vatel-1l, category: alimentos, name: Aceite vegetal Vatel 1 L, url: "https://www.riomarket.com/p/aceite-vegetal-vatel-1-lt-7591049193035"}
+      - {sku: aceite-maiz-mazeite-1l, category: alimentos, name: Aceite de maiz Mazeite 1 L, url: "https://www.riomarket.com/p/aceite-de-maiz-mazeite-1-lt-7591002000745"}
+      - {sku: azucar-montalban-1kg, category: alimentos, name: Azucar refinada Montalban 1 kg, url: "https://www.riomarket.com/p/azucar-refinada-montalban-1-kg-7591357020405"}
+      - {sku: caraota-negra-pantera-900g, category: alimentos, name: Caraotas negras Pantera 900 g, url: "https://www.riomarket.com/p/caraotas-negras-pantera-900-gr-7591794090139"}
+      - {sku: margarina-mavesa-500g, category: alimentos, name: Margarina Mavesa 500 g, url: "https://www.riomarket.com/p/margarina-mavesa-500-gr-7590006200137"}
+      - {sku: mayonesa-mavesa-445g, category: alimentos, name: Mayonesa Mavesa 445 g, url: "https://www.riomarket.com/p/mayonesa-mavesa-445-gr-719503030123"}
+      - {sku: atun-margarita-aceite-140g, category: alimentos, name: Atun aceite vegetal Margarita 140 g, url: "https://www.riomarket.com/p/atun-aceite-vegetal-margarita-140-gr-7591002700010"}
+      - {sku: sardina-margarita-tomate-170g, category: alimentos, name: Sardinas salsa de tomate Margarita 170 g, url: "https://www.riomarket.com/p/sardinas-salsa-de-tomate-margarita-170-gr-7591002700201"}
+      - {sku: leche-polvo-purisima-900g, category: alimentos, name: Leche en polvo completa Purisima 900 g, url: "https://www.riomarket.com/p/leche-polvo-completa-purisima-900-gr-7591210003705"}
+      - {sku: coca-cola-2l, category: bebidas, name: Coca-Cola sabor original 2 L, url: "https://www.riomarket.com/p/refresco-sabor-original-coca-cola-2-lt-7591127123626"}
+      - {sku: agua-nevada-1-5l, category: bebidas, name: Agua mineral Nevada 1.5 L, url: "https://www.riomarket.com/p/agua-mineral-nevada-15-lt-7591127363503"}
+      - {sku: detergente-ariel-polvo-800g, category: limpieza, name: Detergente en polvo Ariel 800 g, url: "https://www.riomarket.com/p/detergente-polvo-ariel-800-gr-7500435250962"}
+      - {sku: lavaplatos-axion-crema-450g, category: limpieza, name: Lavaplatos crema limon Axion 450 g, url: "https://www.riomarket.com/p/lavaplatos-crema-limon-axion-450-gr-7702010380747"}
+      - {sku: lavaplatos-axion-liquido-750ml, category: limpieza, name: Lavaplatos liquido limon Axion 750 ml, url: "https://www.riomarket.com/p/lavaplatos-liquido-limon-axion-750-ml-7509546051932"}
+      - {sku: cloro-mas-1l, category: limpieza, name: Cloro Mas 1 L, url: "https://www.riomarket.com/p/cloro-mas-1-lt-7591153000151"}
+      - {sku: crema-dental-colgate-triple-150ml, category: aseo_personal, name: Crema dental triple accion Colgate 150 ml, url: "https://www.riomarket.com/p/crema-dental-triple-accion-menta-original-colgate-150-ml-7509546000350"}
+      - {sku: jabon-protex-avena-110g, category: aseo_personal, name: Jabon barra avena Protex 110 g, url: "https://www.riomarket.com/p/jabon-barra-avena-antibacterial-protex-110-gr-7702010420337"}
+      - {sku: papel-rosal-plus-400h-4r, category: aseo_personal, name: Papel higienico Rosal Plus 400 hojas dobles 4 rollos, url: "https://www.riomarket.com/p/papel-higienico-rosal-plus-400-hojas-dobles-paveca-4-rollos-7591098170230"}

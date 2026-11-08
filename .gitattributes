@@ -1,0 +1,6 @@
+# Same line endings on Windows and on the Linux bot that appends data.
+* text=auto eol=lf
+*.csv text eol=lf
+# Saved store/API responses are test evidence: keep them byte-for-byte.
+tests/fixtures/** -text
+*.pem text eol=lf
