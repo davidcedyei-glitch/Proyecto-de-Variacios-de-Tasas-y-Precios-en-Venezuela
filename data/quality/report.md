@@ -1,6 +1,6 @@
 # Data-quality report
 
-Generated 2026-11-09T06:13:05+00:00 by `python -m observatory.run quality`.
+Generated 2026-11-09T18:42:28+00:00 by `python -m observatory.run quality`.
 **0 errors, 0 warnings, 3 notes.** Nothing is modified or dropped; flagged rows stay in the raw data.
 
 | level | check | subject | detail |
