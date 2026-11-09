@@ -173,3 +173,83 @@ ts_utc,store,sku,category,name,price,currency,in_stock,status,method,http_status
 2026-11-09T00:03:44+00:00,rio,crema-dental-colgate-triple-150ml,aseo_personal,Crema dental triple accion Colgate 150 ml,5.9897,USD,True,ok,jsonld,200,https://www.riomarket.com/p/crema-dental-triple-accion-menta-original-colgate-150-ml-7509546000350
 2026-11-09T00:03:44+00:00,rio,jabon-protex-avena-110g,aseo_personal,Jabon barra avena Protex 110 g,2.5825,USD,True,ok,jsonld,200,https://www.riomarket.com/p/jabon-barra-avena-antibacterial-protex-110-gr-7702010420337
 2026-11-09T00:03:44+00:00,rio,papel-rosal-plus-400h-4r,aseo_personal,Papel higienico Rosal Plus 400 hojas dobles 4 rollos,2.4866,USD,True,ok,jsonld,200,https://www.riomarket.com/p/papel-higienico-rosal-plus-400-hojas-dobles-paveca-4-rollos-7591098170230
+2026-11-09T21:30:24+00:00,sigo,arroz-mary-premium-900g,alimentos,Arroz Premium Mary 900 g,1.38,USD,,ok,css,200,https://www.sigo.com.ve/arroz-premium-mary-900-gr
+2026-11-09T21:30:24+00:00,sigo,harina-maiz-juana-1kg,alimentos,Harina de maiz blanca Juana 1 kg,0.88,USD,,ok,css,200,https://www.sigo.com.ve/harina-blanca-juana-1-k
+2026-11-09T21:30:24+00:00,sigo,harina-trigo-blancaflor-1kg,alimentos,Harina de trigo todo uso Blancaflor 1 kg,1.28,USD,,ok,css,200,https://www.sigo.com.ve/harina-todo-uso-blancaflor-1-k
+2026-11-09T21:30:24+00:00,sigo,espagueti-primor-1kg,alimentos,Espagueti Primor 1 kg,2.15,USD,,ok,css,200,https://www.sigo.com.ve/espaguetti-primor-1-k
+2026-11-09T21:30:24+00:00,sigo,aceite-vegetal-vatel-1l,alimentos,Aceite vegetal Vatel 1 L,3.26,USD,,ok,css,200,https://www.sigo.com.ve/aceite-vegetal-vatel-de-1-l
+2026-11-09T21:30:24+00:00,sigo,aceite-maiz-mazeite-1l,alimentos,Aceite de maiz Mazeite 1 L,3.93,USD,,ok,css,200,https://www.sigo.com.ve/aceite-de-ma%C3%ADz-mazeite-1-l
+2026-11-09T21:30:24+00:00,sigo,caraota-negra-pantera-900g,alimentos,Caraota negra Pantera 900 g,2.5,USD,,ok,css,200,https://www.sigo.com.ve/caraota-negra-pantera-900gr
+2026-11-09T21:30:24+00:00,sigo,lenteja-mary-400g,alimentos,Lenteja Mary 400 g,1.38,USD,,ok,css,200,https://www.sigo.com.ve/lenteja-mary-400-gr
+2026-11-09T21:30:24+00:00,sigo,atun-margarita-aceite-140g,alimentos,Atun en aceite vegetal Margarita 140 g,2.11,USD,,ok,css,200,https://www.sigo.com.ve/at%C3%BAn-en-aceite-vegetal-margarita-140-gr
+2026-11-09T21:30:24+00:00,sigo,sardina-margarita-tomate-170g,alimentos,Sardinas en salsa de tomate Margarita 170 g,1.29,USD,,ok,css,200,https://www.sigo.com.ve/sardinas-en-salsa-de-tomate-margarita-170-gr
+2026-11-09T21:30:24+00:00,sigo,mayonesa-mavesa-445g,alimentos,Mayonesa Mavesa 445 g,3.82,USD,,ok,css,200,https://www.sigo.com.ve/mayonesa-mavesa-445-gr-2
+2026-11-09T21:30:24+00:00,sigo,margarina-mavesa-500g,alimentos,Margarina Mavesa 500 g,2.55,USD,,ok,css,200,https://www.sigo.com.ve/margarina-mavesa-500-gr
+2026-11-09T21:30:24+00:00,sigo,mantequilla-purisima-sal-200g,alimentos,Mantequilla con sal Purisima 200 g,3.95,USD,,ok,css,200,https://www.sigo.com.ve/mantq-purisima-200g-csal
+2026-11-09T21:30:24+00:00,sigo,queso-blanco-paisa-250g,alimentos,Queso blanco Paisa especial 250 g,3.94,USD,,ok,css,200,https://www.sigo.com.ve/queso-blanco-paisa-especial-150-gr
+2026-11-09T21:30:24+00:00,sigo,leche-polvo-montana-fresca-900g,alimentos,Leche en polvo completa Montana Fresca 900 g,7.19,USD,,ok,css,200,https://www.sigo.com.ve/leche-monta%C3%B1a-fresca-900g-compt
+2026-11-09T21:30:24+00:00,sigo,coca-cola-2l,bebidas,Coca-Cola original 2 L,1.75,USD,,ok,css,200,https://www.sigo.com.ve/refresco-coca-cola-2-l
+2026-11-09T21:30:24+00:00,sigo,maltin-polar-1-5l,bebidas,Malta Maltin Polar 1.5 L,1.88,USD,,ok,css,200,https://www.sigo.com.ve/malta-malt%C3%ADn-polar-15-l
+2026-11-09T21:30:24+00:00,sigo,agua-minalba-1-5l,bebidas,Agua mineral Minalba 1.5 L,1.52,USD,,ok,css,200,https://www.sigo.com.ve/agua-mineral-minalba-15-l
+2026-11-09T21:30:24+00:00,sigo,cloro-titan-1l,limpieza,Cloro multiusos El Titan 1 L,0.95,USD,,ok,css,200,https://www.sigo.com.ve/cloro-multiusos-el-titan-1l
+2026-11-09T21:30:24+00:00,sigo,detergente-titan-1kg,limpieza,Detergente El Titan original 1 kg,1.36,USD,,ok,css,200,https://www.sigo.com.ve/deterente-el-titan-original-1-kg-lavado-manual
+2026-11-09T21:30:24+00:00,sigo,detergente-ariel-liquido-800ml,limpieza,Detergente liquido Ariel doble poder 800 ml,6.58,USD,,ok,css,200,https://www.sigo.com.ve/detergente-l%C3%ADquido-doble-poder-ariel-800-ml
+2026-11-09T21:30:24+00:00,sigo,lavaplatos-axion-crema-450g,limpieza,Lavaplatos en crema Axion limon 450 g,3.5,USD,,ok,css,200,https://www.sigo.com.ve/lavaplatos-con-lim%C3%B3n-axion-450-gr
+2026-11-09T21:30:24+00:00,sigo,jabon-azul-las-llaves-200g,limpieza,Jabon azul en barra Las Llaves 200 g,0.94,USD,,ok,css,200,https://www.sigo.com.ve/jab%C3%B3n-az%C3%BAl-en-barra-las-llaves-200-gr
+2026-11-09T21:30:24+00:00,sigo,crema-dental-colgate-antisarro-75ml,aseo_personal,Crema dental Colgate anti sarro 75 ml,2.9,USD,,ok,css,200,https://www.sigo.com.ve/crema-dental-anti-sarro-colgate-75-ml
+2026-11-09T21:30:24+00:00,sigo,desodorante-rexona-v8-barra-50g,aseo_personal,Desodorante en barra Rexona V8 50 g,3.9,USD,,ok,css,200,https://www.sigo.com.ve/desodorante-en-barra-v8-rexona-50-gr
+2026-11-09T21:30:24+00:00,sigo,compota-manzana-heinz-186g,bebe,Compota de manzana Heinz 186 g,0.96,USD,,ok,css,200,https://www.sigo.com.ve/compota-de-manzana-heinz-186-gr
+2026-11-09T21:30:24+00:00,sigo,acetaminofen-dol-x10,medicamentos,Acetaminofen Dol 10 tabletas,2.61,USD,,ok,css,200,https://www.sigo.com.ve/acetaminofen-dol-tab-x10
+2026-11-09T21:30:24+00:00,farmatodo,arroz-mary-premium-900g,alimentos,Arroz Mary Premium 900 g,1544.0,VES,True,ok,jsonld,200,https://www.farmatodo.com.ve/producto/112370639-arroz-mary-premium-900gr-tipo-i
+2026-11-09T21:30:24+00:00,farmatodo,margarina-mavesa-500g,alimentos,Margarina Mavesa 500 g,2953.0,VES,True,ok,jsonld,200,https://www.farmatodo.com.ve/producto/111016380-margarina-mavesa-500gr
+2026-11-09T21:30:24+00:00,farmatodo,mayonesa-mavesa-445g,alimentos,Mayonesa Mavesa 445 g,3789.0,VES,True,ok,jsonld,200,https://www.farmatodo.com.ve/producto/111592899-mayonesa-mavesa-445gr
+2026-11-09T21:30:24+00:00,farmatodo,atun-margarita-aceite-140g,alimentos,Atun Margarita en aceite vegetal 140 g,2262.0,VES,True,ok,jsonld,200,https://www.farmatodo.com.ve/producto/113922394-atun-margarita-en-aceite-vegetal-140gr
+2026-11-09T21:30:24+00:00,farmatodo,leche-polvo-la-campesina-800g,alimentos,Leche en polvo La Campesina 800 g,12993.0,VES,True,ok,jsonld,200,https://www.farmatodo.com.ve/producto/113719409-leche-en-polvo-la-campesina-enriquecida-con-hierro-y-vitaminas-800gr
+2026-11-09T21:30:24+00:00,farmatodo,azucar-montalban-1kg,alimentos,Azucar refinada Montalban 1 kg,1766.0,VES,True,ok,jsonld,200,https://www.farmatodo.com.ve/producto/111103216-azucar-montalban-refinada-1kg
+2026-11-09T21:30:24+00:00,farmatodo,crema-dental-colgate-triple-150ml,aseo_personal,Crema dental Colgate triple accion 150 ml,4758.0,VES,True,ok,jsonld,200,https://www.farmatodo.com.ve/producto/111126966-crema-dental-colgate-triple-accion-150ml
+2026-11-09T21:30:24+00:00,farmatodo,jabon-protex-avena-110g,aseo_personal,Jabon en barra Protex avena 110 g,1941.0,VES,True,ok,jsonld,200,https://www.farmatodo.com.ve/producto/113668390-jabon-en-barra-protex-avena-110gr
+2026-11-09T21:30:24+00:00,farmatodo,papel-rosal-plus-300h-4r,aseo_personal,Papel higienico Rosal Plus 4 rollos 300 hojas,1551.0,VES,True,ok,jsonld,200,https://www.farmatodo.com.ve/producto/111112156-papel-higienico-rosal-plus-vinotinto-4-rollos-300hojas
+2026-11-09T21:30:24+00:00,farmatodo,panal-farmatodo-m-30u,bebe,Panal Farmatodo premium etapa 2 talla M 30 u,8020.0,VES,True,ok,jsonld,200,https://www.farmatodo.com.ve/producto/115659518-panal-farmatodo-premium-etapa-2-talla-m-x-30-und
+2026-11-09T21:30:24+00:00,farmatodo,detergente-ariel-liquido-800ml,limpieza,Detergente liquido Ariel doble poder 800 ml,10929.0,VES,True,ok,jsonld,200,https://www.farmatodo.com.ve/producto/113706464-detergente-liquido-ariel-doble-poder-800ml
+2026-11-09T21:30:24+00:00,farmatodo,lavaplatos-axion-liquido-750ml,limpieza,Lavaplatos liquido Axion limon 750 ml,9003.0,VES,True,ok,jsonld,200,https://www.farmatodo.com.ve/producto/114847445-lavaplatos-liquido-axion-limon-750ml
+2026-11-09T21:30:24+00:00,farmatodo,ibuprofeno-ibutan-400-x10,medicamentos,Ibuprofeno Ibutan 400 mg 10 tabletas,2653.0,VES,True,ok,jsonld,200,https://www.farmatodo.com.ve/producto/111004481-ibuprofeno-ibutan-400mg-10-tabletas
+2026-11-09T21:30:24+00:00,farmatodo,losartan-la-sante-50-x30,medicamentos,Losartan potasico La Sante 50 mg 30 tabletas,1764.0,VES,True,ok,jsonld,200,https://www.farmatodo.com.ve/producto/111546897-losartan-potasico-50mg-x30-tabletas-la-sante
+2026-11-09T21:30:24+00:00,farmatodo,acetaminofen-atamel-500-x20,medicamentos,Acetaminofen Atamel 500 mg 20 tabletas,3811.0,VES,True,ok,jsonld,200,https://www.farmatodo.com.ve/producto/114994402-acetaminofen-500-mg-atamel-x-20-tabletas
+2026-11-09T21:30:24+00:00,locatel,arroz-primor-900g,alimentos,Arroz Primor tradicional 900 g,927.39,VES,True,ok,jsonld,200,https://www.locatel.com.ve/primor_arroz_tradicional_900g/p
+2026-11-09T21:30:24+00:00,locatel,aceite-maiz-mazeite-1l,alimentos,Aceite de maiz Mazeite 1 L,4693.72,VES,True,ok,jsonld,200,https://www.locatel.com.ve/mazeite_aceite_de_maiz_1l/p
+2026-11-09T21:30:24+00:00,locatel,margarina-mavesa-500g,alimentos,Margarina Mavesa 500 g,2953.0,VES,True,ok,jsonld,200,https://www.locatel.com.ve/mavesa_margarina_500gr/p
+2026-11-09T21:30:24+00:00,locatel,atun-margarita-aceite-140g,alimentos,Atun Margarita en aceite vegetal 140 g,2202.25,VES,True,ok,jsonld,200,https://www.locatel.com.ve/margarita_atun_en_aceite_vegetal_140g/p
+2026-11-09T21:30:24+00:00,locatel,sardina-margarita-tomate-170g,alimentos,Sardina Margarita en salsa de tomate 170 g,1386.0,VES,True,ok,jsonld,200,https://www.locatel.com.ve/margarita_sardina_en_salsa_tomate_170g/p
+2026-11-09T21:30:24+00:00,locatel,leche-polvo-san-simon-900g,alimentos,Leche en polvo completa San Simon 900 g,15145.06,VES,True,ok,jsonld,200,https://www.locatel.com.ve/san_simon_leche_en_polvo_completa_900g/p
+2026-11-09T21:30:24+00:00,locatel,azucar-amanecer-1kg,alimentos,Azucar refinada Amanecer 1 kg,1761.65,VES,True,ok,jsonld,200,https://www.locatel.com.ve/amanecer-azucar-refinado-1kg/p
+2026-11-09T21:30:24+00:00,locatel,crema-dental-colgate-triple-150ml,aseo_personal,Crema dental Colgate triple accion 150 ml,4409.35,VES,True,ok,jsonld,200,https://www.locatel.com.ve/colgate_crema_dental_triple_accion_150ml/p
+2026-11-09T21:30:24+00:00,locatel,jabon-protex-avena-110g,aseo_personal,Jabon Protex avena 110 g,1902.51,VES,True,ok,jsonld,200,https://www.locatel.com.ve/jabon_protex_en_barra_avena_110_gr/p
+2026-11-09T21:30:24+00:00,locatel,papel-rosal-plus-300h-4r,aseo_personal,Papel higienico Rosal Plus 4 rollos 300 hojas,2718.65,VES,True,ok,jsonld,200,https://www.locatel.com.ve/rosal_plus_vino_tinto_ph_300hojas_x4/p
+2026-11-09T21:30:24+00:00,locatel,desodorante-rexona-v8-barra-50g,aseo_personal,Desodorante en barra Rexona men V8 50 g,6244.09,VES,True,ok,jsonld,200,https://www.locatel.com.ve/desod_rexona_barra_men_v8_50g/p
+2026-11-09T21:30:24+00:00,locatel,detergente-ariel-liquido-800ml,limpieza,Detergente liquido Ariel doble poder 800 ml,9421.55,VES,True,ok,jsonld,200,https://www.locatel.com.ve/ariel_doble_poder_liquido_800ml/p
+2026-11-09T21:30:24+00:00,locatel,lavaplatos-axion-liquido-750ml,limpieza,Lavaplatos liquido Axion limon 750 ml,7881.03,VES,True,ok,jsonld,200,https://www.locatel.com.ve/axion_lavaplatos_liq_limon_750ml/p
+2026-11-09T21:30:24+00:00,locatel,lavaplatos-axion-crema-450g,limpieza,Lavaplatos en crema Axion limon 450 g,4079.13,VES,True,ok,jsonld,200,https://www.locatel.com.ve/axion_limon_pasta_450gr/p
+2026-11-09T21:30:24+00:00,locatel,losartan-calox-50-x30,medicamentos,Losartan potasico Calox 50 mg 30 tabletas,1548.4,VES,True,ok,jsonld,200,https://www.locatel.com.ve/calox_losartan_potasico_50_mg_x30_tabletas_recubiertas/p
+2026-11-09T21:30:24+00:00,locatel,ibuprofeno-calox-400-x10,medicamentos,Ibuprofeno Calox 400 mg 10 tabletas,1874.56,VES,False,out_of_stock,jsonld,200,https://www.locatel.com.ve/calox_ibuprofeno_400mg_x_10_tab_rec_/p
+2026-11-09T21:30:24+00:00,locatel,acetaminofen-atamel-500-x20,medicamentos,Acetaminofen Atamel (Calox) 500 mg 20 tabletas,3734.78,VES,True,ok,jsonld,200,https://www.locatel.com.ve/calox_atamel_500_mg_x_20_tabletas/p
+2026-11-09T21:30:24+00:00,rio,harina-pan-blanca-sg-1kg,alimentos,Harina de maiz blanco sin gluten PAN 1 kg,1.298,USD,True,ok,jsonld,200,https://www.riomarket.com/p/harina-de-maiz-blanco-sin-gluten-pan-1-kg-7591002200145
+2026-11-09T21:30:24+00:00,rio,arroz-primor-900g,alimentos,Arroz tradicional Primor 900 g,1.0568,USD,True,ok,jsonld,200,https://www.riomarket.com/p/arroz-tradicional-primor-900-gr-7591002800109
+2026-11-09T21:30:24+00:00,rio,pasta-dedal-primor-1kg,alimentos,Pasta corta dedales Primor 1 kg,2.2875,USD,True,ok,jsonld,200,https://www.riomarket.com/p/pasta-corta-dedales-primor-1-kg-7591002000851
+2026-11-09T21:30:24+00:00,rio,aceite-vegetal-vatel-1l,alimentos,Aceite vegetal Vatel 1 L,3.5635,USD,True,ok,jsonld,200,https://www.riomarket.com/p/aceite-vegetal-vatel-1-lt-7591049193035
+2026-11-09T21:30:24+00:00,rio,aceite-maiz-mazeite-1l,alimentos,Aceite de maiz Mazeite 1 L,5.425,USD,True,ok,jsonld,200,https://www.riomarket.com/p/aceite-de-maiz-mazeite-1-lt-7591002000745
+2026-11-09T21:30:24+00:00,rio,azucar-montalban-1kg,alimentos,Azucar refinada Montalban 1 kg,1.71,USD,True,ok,jsonld,200,https://www.riomarket.com/p/azucar-refinada-montalban-1-kg-7591357020405
+2026-11-09T21:30:24+00:00,rio,caraota-negra-pantera-900g,alimentos,Caraotas negras Pantera 900 g,2.877,USD,True,ok,jsonld,200,https://www.riomarket.com/p/caraotas-negras-pantera-900-gr-7591794090139
+2026-11-09T21:30:24+00:00,rio,margarina-mavesa-500g,alimentos,Margarina Mavesa 500 g,3.497,USD,True,ok,jsonld,200,https://www.riomarket.com/p/margarina-mavesa-500-gr-7590006200137
+2026-11-09T21:30:24+00:00,rio,mayonesa-mavesa-445g,alimentos,Mayonesa Mavesa 445 g,3.8813,USD,True,ok,jsonld,200,https://www.riomarket.com/p/mayonesa-mavesa-445-gr-719503030123
+2026-11-09T21:30:24+00:00,rio,atun-margarita-aceite-140g,alimentos,Atun aceite vegetal Margarita 140 g,2.9668,USD,True,ok,jsonld,200,https://www.riomarket.com/p/atun-aceite-vegetal-margarita-140-gr-7591002700010
+2026-11-09T21:30:24+00:00,rio,sardina-margarita-tomate-170g,alimentos,Sardinas salsa de tomate Margarita 170 g,1.6898,USD,True,ok,jsonld,200,https://www.riomarket.com/p/sardinas-salsa-de-tomate-margarita-170-gr-7591002700201
+2026-11-09T21:30:24+00:00,rio,leche-polvo-purisima-900g,alimentos,Leche en polvo completa Purisima 900 g,14.3323,USD,True,ok,jsonld,200,https://www.riomarket.com/p/leche-polvo-completa-purisima-900-gr-7591210003705
+2026-11-09T21:30:24+00:00,rio,coca-cola-2l,bebidas,Coca-Cola sabor original 2 L,1.3508,USD,True,ok,jsonld,200,https://www.riomarket.com/p/refresco-sabor-original-coca-cola-2-lt-7591127123626
+2026-11-09T21:30:24+00:00,rio,agua-nevada-1-5l,bebidas,Agua mineral Nevada 1.5 L,1.7065,USD,True,ok,jsonld,200,https://www.riomarket.com/p/agua-mineral-nevada-15-lt-7591127363503
+2026-11-09T21:30:24+00:00,rio,detergente-ariel-polvo-800g,limpieza,Detergente en polvo Ariel 800 g,5.2052,USD,True,ok,jsonld,200,https://www.riomarket.com/p/detergente-polvo-ariel-800-gr-7500435250962
+2026-11-09T21:30:24+00:00,rio,lavaplatos-axion-crema-450g,limpieza,Lavaplatos crema limon Axion 450 g,5.0905,USD,True,ok,jsonld,200,https://www.riomarket.com/p/lavaplatos-crema-limon-axion-450-gr-7702010380747
+2026-11-09T21:30:24+00:00,rio,lavaplatos-axion-liquido-750ml,limpieza,Lavaplatos liquido limon Axion 750 ml,8.5341,USD,True,ok,jsonld,200,https://www.riomarket.com/p/lavaplatos-liquido-limon-axion-750-ml-7509546051932
+2026-11-09T21:30:24+00:00,rio,cloro-mas-1l,limpieza,Cloro Mas 1 L,3.2573,USD,True,ok,jsonld,200,https://www.riomarket.com/p/cloro-mas-1-lt-7591153000151
+2026-11-09T21:30:24+00:00,rio,crema-dental-colgate-triple-150ml,aseo_personal,Crema dental triple accion Colgate 150 ml,5.9897,USD,True,ok,jsonld,200,https://www.riomarket.com/p/crema-dental-triple-accion-menta-original-colgate-150-ml-7509546000350
+2026-11-09T21:30:24+00:00,rio,jabon-protex-avena-110g,aseo_personal,Jabon barra avena Protex 110 g,2.5825,USD,True,ok,jsonld,200,https://www.riomarket.com/p/jabon-barra-avena-antibacterial-protex-110-gr-7702010420337
+2026-11-09T21:30:24+00:00,rio,papel-rosal-plus-400h-4r,aseo_personal,Papel higienico Rosal Plus 400 hojas dobles 4 rollos,2.4866,USD,True,ok,jsonld,200,https://www.riomarket.com/p/papel-higienico-rosal-plus-400-hojas-dobles-paveca-4-rollos-7591098170230
