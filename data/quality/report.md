@@ -1,11 +1,11 @@
 # Data-quality report
 
-Generated 2026-11-27T00:32:35+00:00 by `python -m observatory.run quality`.
+Generated 2026-11-27T13:46:41+00:00 by `python -m observatory.run quality`.
 **0 errors, 5 warnings, 3 notes.** Nothing is modified or dropped; flagged rows stay in the raw data.
 
 | level | check | subject | detail |
 |---|---|---|---|
-| warn | fx_stale | bcv/oficial | last row 2026-11-18T19:27:04+00:00 (197 h ago) |
+| warn | fx_stale | bcv/oficial | last row 2026-11-18T19:27:04+00:00 (210 h ago) |
 | warn | low_coverage | sigo | 2026-11-26: valid prices for 0/27 configured items (< 80%); layout change or block? |
 | warn | product_missing | locatel/ibuprofeno-calox-400-x10 | no valid price on the last 3 collection days (last valid: never, last status: out_of_stock) |
 | warn | product_missing | rio/aceite-vegetal-vatel-1l | no valid price on the last 3 collection days (last valid: 2026-11-17, last status: no_price) |
